@@ -1,16 +1,16 @@
-let randomnumber = 0
-let userguess = 0
+let userinput = 0
 
-document.getElementById('correct').addEventListener('click', guess)
+document.getElementById('button').addEventListener('click', input)
 
-function guess () {
-  userguess = document.getElementById('num').value
-  userguess = parseInt(userguess)
+function input () {
+  userinput = document.getElementById('num').value
+  userinput = parseInt(userinput)
 
-  randomnumber = Math.random() * 6 + 1
-  randomnumber = parseInt(randomnumber)
-
-  if (userguess === randomnumber) {
-    document.getElementById('p').innerHTML = 'you win!'
+  if (userinput > 0) {
+    document.getElementById('p').innerHTML = 'positive!'
+  }
+  
+  if (userinput < 0) {
+    document.getElementById('p').innerHTML = 'negative!'
   }
 }
