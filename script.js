@@ -9,7 +9,6 @@ function input () {
   if (userinput > 0) {
     document.getElementById('p').innerHTML = 'positive!'
   }
-  
   if (userinput < 0) {
     document.getElementById('p').innerHTML = 'negative!'
   }
